@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+#style{
+	position: relative;
+		background-color: lightblue;
+		height: 1000px;
+		width: 100%;
+
+
+
+</style>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+function makeSnowflake () {
+	var snowflake = document.createElement("div")
+	document.body.appendChild(snowflake);
+snowflake.style.height = "200px";
+snowflake.style.width = "200px";
+snowflake.style.backgroundImage = "url(youngembiid.jpg)";
+snowflake.style.display = "inline-block";
+snowflake.style.backgroundSize = "cover";
+
+penny.addEventListener("click",function(){
+penny.style.backgroundImage = "url(oldembiid.jpg)";
+
+})
+}
+
+setInterval(makeSnowflake, 1000);
+
+</script>
+
+
+<div id="style"></div>
+</body>
+</html>

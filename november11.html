@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+	<h>Click the Young Embiid</h>
+
+<script type="text/javascript">
+
+function makePenny () {
+	var penny = document.createElement("div")
+	document.body.appendChild(penny);
+penny.style.height = "200px";
+penny.style.width = "200px";
+penny.style.backgroundImage = "url(youngembiid.jpg)";
+penny.style.display = "inline-block";
+penny.style.backgroundSize = "cover";
+
+penny.addEventListener("click",function(){
+penny.style.backgroundImage = "url(oldembiid.jpg)";
+
+})
+}
+
+setInterval(makePenny, 1000);
+
+</script>
+<div></div>
+
+</body>
+</html>

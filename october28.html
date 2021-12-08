@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<p>hi</p>
+
+<script type="text/javascript">
+
+function balljump () {
+
+	let jump = document.createElement("p");
+	document.body.appendChild(jump);
+	jump.innerText = 'hi nelson!'
+
+	jump.style.width = "50px";
+	jump.style.height = "50px";
+	jump.style.backgroundColor = "red";
+
+	jump.style.borderRadius = "50%";
+	jump.style.position = "relative";
+	jump.style.display = "inline-block";
+
+}
+
+
+document.addEventListener("click", balljump)
+
+</script>
+
+</body>
+</html>
