@@ -1,0 +1,103 @@
+</html>
+<head>
+	<style type="text/css">
+		
+		center {
+			margin: auto;
+			text-align: center;
+		}
+
+		#player{
+			width:1600px;
+			height:600px;
+			position: relative;
+			background-size:contain;
+			background-repeat: no-repeat;
+			text-align: center;
+			margin: auto;
+			border: auto;
+			padding: auto;
+		}
+
+		#player {
+  			display: block;
+ 			margin-left: auto;
+ 			margin-right: auto;
+			width: 60%;
+
+		}
+
+
+		#description {
+  			display: block;
+ 			margin-left: auto;
+ 			margin-right: auto;
+			width: 40%;
+
+		}
+
+		#description{
+			font-size: 42px;
+			width: 100px;
+			height: 50px;
+			background-color: white;
+			left: 800;
+			right: 800;
+			text-align: center;
+		
+				}
+	</style>
+</head>
+<body>
+
+	<center>
+
+		<h1>Click to see NBA Championships Over Time</h1>
+		
+		
+		<div id="player"></div>
+		<div id="description"></div>
+	</center>
+
+	<script type="text/javascript">
+
+
+		
+
+		var human = ["1947", ]
+
+		var click = ["url(1947.jpeg)", 
+
+
+		
+		]
+		
+		var description = document.getElementById('description');
+		
+		var box = document.getElementById('player');
+
+		var ring =0;
+
+		box.addEventListener("click", function(){
+
+		ring = ring+1;
+
+		console.log(human[ring])
+
+		box.style.backgroundImage = click[ring];
+		description.innerText = human[ring];
+		
+;
+		box.style.backgroundColor = "white";
+
+
+		})
+
+
+		player.style.backgroundImage = "url(databackground.jpg)"
+
+
+	</script>
+
+</body>
+</html>

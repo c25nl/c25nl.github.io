@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<style type="text/css">
+
+	#animation{
+		width: 200px;
+		height: 200px;
+		background-image: url(before.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+
+
+	}
+</style>
+</head>
+<body>
+
+	<div id="animation"></div>
+
+	<script type="text/javascript">
+		var animation = document.getElementById("animation");
+
+		animation.addEventListener("click",function(){
+		
+		animation.style.backgroundImage="url(middle.jpg)";
+
+		})
+
+	</script>
+
+</body>
+</html>

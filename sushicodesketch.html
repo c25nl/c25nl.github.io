@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+<style type="text/css">
+
+.sushi{
+
+	width:  110px;
+	height:  110px;
+	background-image: url(sushi.jpeg);
+	background-size: cover;
+	position: absolute;
+
+
+
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div></div>
+
+<script type="text/javascript">
+
+document.addEventListener("mousemove", function makeSushi(he){
+var sushi = document.createElement("div");
+document.body.appendChild(sushi);
+sushi.classList.add("sushi");
+
+console.log(he);
+
+sushi.style.left = he.clientX -55 + "px";
+
+sushi.style.top = he.clientY -55 + "px";
+}
+
+);
+
+</script>
+</body>
+</html>
