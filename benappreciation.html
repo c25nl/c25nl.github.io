@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<style type="text/css">
+
+	#animation{
+		width: 500px;
+		height: 500px;
+		background-image: url(4a.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+
+
+	}
+</style>
+</head>
+<body>
+
+	<center>
+
+	<div id="animation"></div>
+</center>
+	<script type="text/javascript">
+		var animation = document.getElementById("animation");
+
+		var bens = ["Basically Still a Sumo", "Half Ben half Sumo", "Almost Ben", "So close", "Ben!!!", "yay!!!"]
+
+
+		var x =-1
+		animation.addEventListener("click",function(){
+
+			x=x+1;
+
+			animation.innerText = bens[x];
+			animation.style.backgroundImage = "url("+ x +".jpg)"
+
+			console.log(animation.style.backgroundImage)
+		})
+
+	</script>
+
+</body>
+</html>

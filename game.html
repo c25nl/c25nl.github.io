@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        .set{
+        	left:1000px;
+        	top:800px;
+/*        	background-color:red;
+*/        	background-size:contain;
+			width:100px;
+			height:100px;
+			background-image:url(ball.jpg);
+			transition:.5s;
+			margin:10px;
+			background-position:center;
+			background-repeat: no-repeat;
+			position:absolute;
+
+
+		}
+	</style>
+</head>
+
+<body>
+
+
+	<audio id="sound" src="ballbounce.mp3"> </audio>
+
+
+
+
+
+
+    <p>Balls Hit:</p><input id="input"></input>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+    	var crunch = document.getElementById('sound');
+    var input = document.getElementById('input');
+        var x = 0;
+
+    function createBall() {
+        var ball = document.createElement('div');
+        document.body.appendChild(ball);
+        ball.classList.add("set");
+
+        function changePosition() {
+            ball.style.left = 1000 * Math.random() + "px";
+            ball.style.top = 1000 * Math.random() + "px";
+
+
+        };
+
+
+        ball.addEventListener("click", function() {
+            console.log("hi");
+            x = x + 1;
+            input.value = x;
+            ball.classList.remove("set");
+            crunch.play()
+
+
+        })
+
+        setInterval(changePosition, 2000)
+    };
+
+
+    setInterval(createBall, 1000);
+
+
+    </script>
+</body>
+
+</html>
